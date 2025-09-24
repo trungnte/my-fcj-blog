@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Port Forwarding :: My New Hugo Site</title>
+    <link>http://localhost:1414/5-portfwd/index.html</link>
+    <description>Info Port Forwarding is a useful way to redirect network traffic from one IP address - Port to another IP address - Port. With Port Forwarding we can access an EC2 instance located in the private subnet from our workstation.&#xA;We will configure Port Forwarding for the RDP connection between our machine and Private Windows Instance located in the private subnet we created for this exercise.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1414/5-portfwd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Port Forwarding</title>
+      <link>http://localhost:1414/5-portfwd/_index.vi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1414/5-portfwd/_index.vi/index.html</guid>
+      <description>Info Port Forwarding là mốt cách thức hữu ích để chuyển hướng lưu lượng mạng từ 1 địa chỉ IP - Port này sang 1 địa chỉ IP - Port khác. Với Port Forwarding chúng ta có thể truy cập một EC2 instance nằm trong private subnet từ máy trạm của chúng ta.&#xA;Chúng ta sẽ cấu hình Port Forwarding cho kết nối RDP giữa máy của mình với Private Windows Instance nằm trong private subnet mà chúng ta đã tạo cho bài thực hành này.</description>
+    </item>
+  </channel>
+</rss>

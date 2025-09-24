@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Create Private Instance :: My New Hugo Site</title>
+    <link>http://localhost:1414/2-prerequiste/2.1-createec2/2.1.6-createec2windows/index.html</link>
+    <description>Go to EC2 service management console Click Instances. Click Launch instances. On the Step 1: Choose an Amazon Machine Image (AMI) page. Drag the mouse down. Click Select to select AMI Microsoft Windows Server 2019 Base. On the Step 2: Choose an Instance Type page. Click on Instance type t2.micro. Click Next: Configure Instance Details.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1414/2-prerequiste/2.1-createec2/2.1.6-createec2windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tạo Private Windows EC2</title>
+      <link>http://localhost:1414/2-prerequiste/2.1-createec2/2.1.6-createec2windows/_index.vi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1414/2-prerequiste/2.1-createec2/2.1.6-createec2windows/_index.vi/index.html</guid>
+      <description>Truy cập giao diện quản trị dịch vụ EC2 Click Instances. Click Launch instances. Tại trang Step 1: Choose an Amazon Machine Image (AMI). Kéo chuột xuống phía dưới. Click Select để lựa chọn AMI Microsoft Windows Server 2019 Base. Tại trang Step 2: Choose an Instance Type. Click chọn Instance type t2.micro. Click Next: Configure Instance Details.</description>
+    </item>
+  </channel>
+</rss>

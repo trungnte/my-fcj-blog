@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Create S3 Bucket :: My New Hugo Site</title>
+    <link>http://localhost:1414/4-s3log/4.2-creates3bucket/index.html</link>
+    <description>In this step, we will create an S3 bucket to store session logs sent from EC2 instances.&#xA;Create S3 Bucket Access S3 service management console Click Create bucket. At the Create bucket page. In the Bucket name field, enter the bucket name lab-yourname-bucket-0001 In the Region section, select Region you are doing the current lab.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1414/4-s3log/4.2-creates3bucket/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tạo S3 Bucket</title>
+      <link>http://localhost:1414/4-s3log/4.2-creates3bucket/_index.vi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1414/4-s3log/4.2-creates3bucket/_index.vi/index.html</guid>
+      <description>Trong bước này, chúng ta sẽ tạo 1 S3 bucket để lưu trữ các session logs được gửi từ các EC2 instance.&#xA;Tạo S3 Bucket Truy cập giao diện quản trị dịch vụ S3 Click Create bucket. Tại trang Create bucket. Tại mục Bucket name điền tên bucket lab-yourname-bucket-0001 Tại mục Region chọn Region bạn đang làm lab hiện tại.</description>
+    </item>
+  </channel>
+</rss>

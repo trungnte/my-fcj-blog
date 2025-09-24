@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Create Endpoint ssm :: My New Hugo Site</title>
+    <link>http://localhost:1414/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.1-endpointssm/index.html</link>
+    <description>Create VPC Endpoint SSM Go to VPC service management console Click Endpoints. Click Create endpoint. At the Create endpoint page. In the Name tag field, enter SSM. In the Service Category section, select AWS Services. In the Service Name section, In the Service category section, select: AWS services In the Service Name section enter: SSM then select Service Name: com.amazonaws.ap-southeast-1.ssm.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1414/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.1-endpointssm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tạo Endpoint ssm</title>
+      <link>http://localhost:1414/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.1-endpointssm/_index.vi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1414/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.1-endpointssm/_index.vi/index.html</guid>
+      <description>Tạo VPC Endpoint SSM Truy cập đến giao diện quản trị của dịch vụ VPC Click Endpoints. Click Create endpoint. Tại trang Create endpoint. Tại mục Name tag điền SSM. Tại mục Service Category chọn AWS Services. Tại mục Service Name, Tại mục Service category chọn: AWS services Tại mục Service Name nhập: SSM sau đó chọn Service Name: com.amazonaws.ap-southeast-1.ssm.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1414&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.148.2">
+    <meta name="generator" content="Relearn 8.0.0+9803d5122ebb3276acea823f476e9eb44f607862">
+    <meta name="description" content="Tạo VPC Endpoint SSMMESSAGES Truy cập đến giao diện quản trị của dịch vụ VPC Click Endpoints. Click Create endpoint. Tại trang Create endpoint. Tại mục Name tag điền SSMMESSAGES. Tại mục Service Category chọn AWS Services. Tại mục Service Name, Tại mục Service category chọn: AWS services Tại mục Service Name nhập: ssmmessages sau đó chọn Service Name: com.amazonaws.ap-southeast-1.ssmmessages. Tại cột Service Name, click chọn com.amazonaws.ap-southeast-1.ssmmessages. Tại mục VPC, chọn Lab VPC. Chọn AZ đầu tiên, sau đó chọn subnet Lab Private Subnet.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1414/images/hero.png">
+    <meta name="twitter:title" content="Tạo Endpoint ssmmessages :: My New Hugo Site">
+    <meta name="twitter:description" content="Tạo VPC Endpoint SSMMESSAGES Truy cập đến giao diện quản trị của dịch vụ VPC Click Endpoints. Click Create endpoint. Tại trang Create endpoint. Tại mục Name tag điền SSMMESSAGES. Tại mục Service Category chọn AWS Services. Tại mục Service Name, Tại mục Service category chọn: AWS services Tại mục Service Name nhập: ssmmessages sau đó chọn Service Name: com.amazonaws.ap-southeast-1.ssmmessages. Tại cột Service Name, click chọn com.amazonaws.ap-southeast-1.ssmmessages. Tại mục VPC, chọn Lab VPC. Chọn AZ đầu tiên, sau đó chọn subnet Lab Private Subnet.">
+    <meta property="og:url" content="http://localhost:1414/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.2-endpointssmmessages/_index.vi/index.html">
+    <meta property="og:site_name" content="My New Hugo Site">
+    <meta property="og:title" content="Tạo Endpoint ssmmessages :: My New Hugo Site">
+    <meta property="og:description" content="Tạo VPC Endpoint SSMMESSAGES Truy cập đến giao diện quản trị của dịch vụ VPC Click Endpoints. Click Create endpoint. Tại trang Create endpoint. Tại mục Name tag điền SSMMESSAGES. Tại mục Service Category chọn AWS Services. Tại mục Service Name, Tại mục Service category chọn: AWS services Tại mục Service Name nhập: ssmmessages sau đó chọn Service Name: com.amazonaws.ap-southeast-1.ssmmessages. Tại cột Service Name, click chọn com.amazonaws.ap-southeast-1.ssmmessages. Tại mục VPC, chọn Lab VPC. Chọn AZ đầu tiên, sau đó chọn subnet Lab Private Subnet.">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Connect to EC2 servers">
+    <meta property="og:image" content="http://localhost:1414/images/hero.png">
+    <meta itemprop="name" content="Tạo Endpoint ssmmessages :: My New Hugo Site">
+    <meta itemprop="description" content="Tạo VPC Endpoint SSMMESSAGES Truy cập đến giao diện quản trị của dịch vụ VPC Click Endpoints. Click Create endpoint. Tại trang Create endpoint. Tại mục Name tag điền SSMMESSAGES. Tại mục Service Category chọn AWS Services. Tại mục Service Name, Tại mục Service category chọn: AWS services Tại mục Service Name nhập: ssmmessages sau đó chọn Service Name: com.amazonaws.ap-southeast-1.ssmmessages. Tại cột Service Name, click chọn com.amazonaws.ap-southeast-1.ssmmessages. Tại mục VPC, chọn Lab VPC. Chọn AZ đầu tiên, sau đó chọn subnet Lab Private Subnet.">
+    <meta itemprop="wordCount" content="128">
+    <meta itemprop="image" content="http://localhost:1414/images/hero.png">
+    <title>Tạo Endpoint ssmmessages :: My New Hugo Site</title>
+    <link href="/images/favicon.png?1758723858" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1758723858" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1758723858" defer></script>
+    <script src="/js/search-lunr.js?1758723858" defer></script>
+    <script src="/js/search.js?1758723858" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1758723858";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1758723858" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1758723858" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1758723858" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1758723858" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758723858" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758723858" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758723858" rel="stylesheet">
+    <link href="/css/theme.css?1758723858" rel="stylesheet">
+    <link href="/css/format-html.css?1758723858" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/3-accessibilitytoinstances\/3.2-private-instance\/3.2.2-createvpcendpoint\/3.2.2.2-endpointssmmessages\/_index.vi\/index.html';
+      window.relearn.relBasePath='..\/..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1414';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'learn', 'relearn-auto', 'relearn-dark', 'relearn-light', 'relearn-bright', 'zen-auto', 'zen-dark', 'zen-light', 'retro-auto', 'neon', 'blue', 'green', 'red' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.2-endpointssmmessages/_index.vi/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Session Management</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/3-accessibilitytoinstances/index.html"><span itemprop="name">Connect to EC2 servers</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/3-accessibilitytoinstances/3.2-private-instance/index.html"><span itemprop="name">Connect to Private instance</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/index.html"><span itemprop="name">Create VPC Endpoint</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.2-endpointssmmessages/index.html"><span itemprop="name">Create Endpoint ssmmessages</span></a><meta itemprop="position" content="5">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Tạo Endpoint ssmmessages</span><meta itemprop="position" content="6"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.2-endpointssmmessages/index.html" title="Create Endpoint ssmmessages (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/_index.vi/index.html" title="Tạo VPC Endpoint (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 3-accessibilitytoinstances" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="tạo-endpoint-ssmmessages">Tạo Endpoint ssmmessages</h1>
+
+<h4 id="tạo-vpc-endpoint-ssmmessages">Tạo VPC Endpoint SSMMESSAGES</h4>
+<ol>
+<li>Truy cập đến <a href="https://console.aws.amazon.com/vpc/home" rel="external" target="_blank">giao diện quản trị của dịch vụ VPC</a></li>
+</ol>
+<ul>
+<li>Click <strong>Endpoints</strong>.</li>
+<li>Click <strong>Create endpoint</strong>.</li>
+</ul>
+<ol start="2">
+<li>Tại trang <strong>Create endpoint</strong>.</li>
+</ol>
+<ul>
+<li>Tại mục <strong>Name tag</strong> điền <strong>SSMMESSAGES</strong>.</li>
+<li>Tại mục <strong>Service Category</strong> chọn <strong>AWS Services</strong>.</li>
+<li>Tại mục <strong>Service Name</strong>,</li>
+<li>Tại mục <strong>Service category</strong> chọn:  <strong>AWS services</strong></li>
+<li>Tại mục <strong>Service Name</strong> nhập: <strong>ssmmessages</strong> sau đó chọn <strong>Service Name: com.amazonaws.ap-southeast-1.ssmmessages</strong>.</li>
+</ul>
+<p><a href="#R-image-14bde80d4cfe3750115c83a097908270" class="lightbox-link"><img alt="Connect" class="lazy lightbox figure-image" loading="lazy" src="/images/3.connect/012-connect.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-14bde80d4cfe3750115c83a097908270"><img alt="Connect" class="lazy lightbox lightbox-image" loading="lazy" src="/images/3.connect/012-connect.png"></a></p>
+<ol start="3">
+<li>Tại cột <strong>Service Name</strong>, click chọn <strong>com.amazonaws.ap-southeast-1.ssmmessages</strong>.</li>
+</ol>
+<ul>
+<li>Tại mục <strong>VPC</strong>, chọn <strong>Lab VPC</strong>.</li>
+<li>Chọn AZ đầu tiên, sau đó chọn subnet <strong>Lab Private Subnet</strong>.</li>
+</ul>
+<p><a href="#R-image-3631a25ec112d754c37663c1f0e73039" class="lightbox-link"><img alt="Connect" class="lazy lightbox figure-image" loading="lazy" src="/images/3.connect/013-connect.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3631a25ec112d754c37663c1f0e73039"><img alt="Connect" class="lazy lightbox lightbox-image" loading="lazy" src="/images/3.connect/013-connect.png"></a></p>
+<ol start="4">
+<li>Kéo chuột xuống dưới.</li>
+</ol>
+<ul>
+<li>Tại mục <strong>Security Group</strong>, chọn Security group <strong>SG VPC Endpoint</strong> mà chúng ta đã tạo trước đó.</li>
+<li>Tại mục <strong>Policy</strong>, chọn <strong>Full access</strong></li>
+</ul>
+<ol start="5">
+<li>Kéo chuột xuống dưới cùng.</li>
+</ol>
+<ul>
+<li>Click <strong>Create endpoint</strong>.</li>
+</ul>
+<ol start="6">
+<li>Chúng ta đã tạo xong VPC Interface Endpoint  <strong>SSMMESSAGES</strong>.</li>
+</ol>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="/">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/1-introduce/index.html"><a class="padding" href="/1-introduce/index.html"> <b> 1. </b> Introduction<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-91db33c5e6aa0582a58258486d3586d8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/_index.vi/index.html"><a class="padding" href="/_index.vi/index.html">Session Management<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/2-prerequiste/index.html"><a class="padding" href="/2-prerequiste/index.html"> <b> 2. </b> Preparation <i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-447525a47cd1507dd1e2574d6dc5d168" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/3-accessibilitytoinstances/index.html"><a class="padding" href="/3-accessibilitytoinstances/index.html"> <b> 3. </b> Connect to EC2 servers<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-077c2a404bcea28721669966cca6e2bc" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/3-accessibilitytoinstances/3.1-public-instance/index.html"><a class="padding" href="/3-accessibilitytoinstances/3.1-public-instance/index.html"> <b> 3.1. </b> Connect to Public Instance<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e577cd88ad7d3a91188991cbbede9347" class="collapsible-menu"></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/3-accessibilitytoinstances/3.2-private-instance/index.html"><a class="padding" href="/3-accessibilitytoinstances/3.2-private-instance/index.html"> <b> 3.2. </b> Connect to Private instance<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-323394c3f19f7030b7a5f8492223b73e" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/3-accessibilitytoinstances/3.2-private-instance/3.2.1-enablevpcdns/index.html"><a class="padding" href="/3-accessibilitytoinstances/3.2-private-instance/3.2.1-enablevpcdns/index.html"> <b> 3.2.1 </b> Enable DNS hostnames<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7b75135f3397894aa6e8321a33f8abe9" class="collapsible-menu"></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/index.html"><a class="padding" href="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/index.html"> <b> 3.2.2 </b> Create VPC Endpoint<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-3b10b603f168315f7466380927b8ce98" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.1-endpointssm/index.html"><a class="padding" href="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.1-endpointssm/index.html"> <b> 3.2.2.1 </b> Create Endpoint ssm<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-c1104a80c30144c36c8547ce25a4062d" class="collapsible-menu"></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.2-endpointssmmessages/index.html"><a class="padding" href="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.2-endpointssmmessages/index.html"> <b> 3.2.2.2 </b> Create Endpoint ssmmessages<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-c50bbd417b9f48f6224519f424956efa" class="collapsible-menu">
+            <li class="active " data-nav-id="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.2-endpointssmmessages/_index.vi/index.html"><a class="padding" href="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.2-endpointssmmessages/_index.vi/index.html"> <b> 3.2.2.2 </b> Tạo Endpoint ssmmessages<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/_index.vi/index.html"><a class="padding" href="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/_index.vi/index.html"> <b> 3.2.2 </b> Tạo VPC Endpoint<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.3-endpointec2messages/index.html"><a class="padding" href="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.3-endpointec2messages/index.html"> <b> 3.2.2.3 </b> Create Endpoint ec2messages<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ca744289e1bf5c58e7363addf33cf9a7" class="collapsible-menu"></ul></li></ul></li>
+            <li class="" data-nav-id="/3-accessibilitytoinstances/3.2-private-instance/_index.vi/index.html"><a class="padding" href="/3-accessibilitytoinstances/3.2-private-instance/_index.vi/index.html"> <b> 3.2. </b> Tạo kết nối đến máy chủ EC2 Private<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/3-accessibilitytoinstances/3.2-private-instance/3.2.3-connectec2/index.html"><a class="padding" href="/3-accessibilitytoinstances/3.2-private-instance/3.2.3-connectec2/index.html"> <b> 3.2.3 </b> Connect to instance<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-395ee57bba9623f25bfc0bb0a79941bf" class="collapsible-menu"></ul></li></ul></li>
+            <li class="" data-nav-id="/3-accessibilitytoinstances/_index.vi/index.html"><a class="padding" href="/3-accessibilitytoinstances/_index.vi/index.html"> <b> 3. </b> Tạo kết nối đến máy chủ EC2<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/4-s3log/index.html"><a class="padding" href="/4-s3log/index.html"> <b> 4. </b> Manage session logs<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-35ace6022a6c9d388b8050812ae65c25" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/5-portfwd/index.html"><a class="padding" href="/5-portfwd/index.html"> <b> 5. </b> Port Forwarding<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-223ddfc694ae0200881c399638d901c7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/6-cleanup/index.html"><a class="padding" href="/6-cleanup/index.html"><b>6. </b>Clean up resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-82c099f259873924fdd9e9912e6c0ee3" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/3.2.2.2-endpointssmmessages/_index.vi/index.html" lang="en" selected data-selected>English</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-learn" value="learn" selected>Learn</option>
+                    <option id="R-select-variant-relearn-auto" value="relearn-auto">Relearn Light/Dark</option>
+                    <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                    <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                    <option id="R-select-variant-zen-auto" value="zen-auto">Zen Light/Dark</option>
+                    <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                    <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                    <option id="R-select-variant-retro-auto" value="retro-auto">Retro Learn/Neon</option>
+                    <option id="R-select-variant-neon" value="neon">Neon</option>
+                    <option id="R-select-variant-blue" value="blue">Blue</option>
+                    <option id="R-select-variant-green" value="green">Green</option>
+                    <option id="R-select-variant-red" value="red">Red</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+            <li class="R-historyclearer">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-history"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <button>Clear History</button>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer">
+  
+  <b> My blog</b> <br>
+  <a href="https://www.hitwebcounter.com/" target="_blank">
+  <img src="https://hitwebcounter.com/counter/counter.php?page=21441280&style=0009&nbdigits=5&type=page&initCount=0" title="Counters" Alt="Counters"   border="0" /></a>       
+
+  <br>
+  <br>
+  <b> Last Updated </b>
+  <br>
+  <i>
+    <font color=orange>24-09-2025</font>
+  </i>
+  
+  <br>
+  <br>
+  <b> My linkedin </b>
+  <br>
+
+  <i>
+    <a href="https://www.linkedin.com/in/trung-nguyen-tien-5a63378a/"  style="color:orange">Nguyễn Tiến Trung</a>
+    <br>
+  </i>
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1758723858" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758723858" defer></script>
+    <script src="/js/theme.js?1758723858" defer></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

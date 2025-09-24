@@ -1,0 +1,54 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+theme = 'hugo-theme-relearn'
+
+[module]
+  [[module.imports]]
+    path = 'github.com/McShelby/hugo-theme-relearn'
+
+[author]
+  email = 'trung.nt.e@gmail.com'
+  name = 'Tien Trung'
+
+
+
+[languages]
+  [languages.en]
+    weight = 1
+    languageName = "English"
+    [languages.en.params]
+      landingPageName = '<i class="fa-fw fas fa-home"></i> Home'
+
+  [languages.vn]
+    weight = 2
+    languageName = "Tiếng Việt"
+    [languages.vn.params]
+      landingPageName = '<i class="fa-fw fas fa-home"></i> Trang chủ'
+
+[params]
+  # linkTitle = 'Relearn'
+  # disableLandingPageButton = true # Show/Hide Home Page
+
+# History
+  showVisitedLinks=true 
+
+  themeVariant = [
+    { identifier = 'learn'          },
+    { identifier = 'relearn-auto',  name = 'Relearn Light/Dark', auto = [ 'relearn-light', 'relearn-dark' ] },
+    { identifier = 'relearn-dark'   },
+    { identifier = 'relearn-light'  },
+    { identifier = 'relearn-bright' },
+    { identifier = 'zen-auto',      name = 'Zen Light/Dark', auto = [ 'zen-light', 'zen-dark' ] },
+    { identifier = 'zen-dark'       },
+    { identifier = 'zen-light'      },
+    { identifier = 'retro-auto',    name = 'Retro Learn/Neon', auto = [ 'learn', 'neon' ] },
+    { identifier = 'neon'           },
+
+    { identifier = 'blue'           },
+    { identifier = 'green'          },
+    { identifier = 'red'            }]
+
+  images = ['images/hero.png']
+
