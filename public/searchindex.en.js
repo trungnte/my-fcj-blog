@@ -1,8 +1,24 @@
 var relearn_searchindex = [
   {
     "breadcrumb": "My First Cloud Journey",
-    "content": "Example content from Admin of FCJ",
-    "description": "Example content from Admin of FCJ",
+    "content": "Change Log v0.1.0",
+    "description": "Change Log v0.1.0",
+    "tags": [],
+    "title": "ChangeLog",
+    "uri": "/changelog/index.html"
+  },
+  {
+    "breadcrumb": "My First Cloud Journey \u003e ChangeLog",
+    "content": "Manage example content Add change log version 0.1.0",
+    "description": "Manage example content Add change log version 0.1.0",
+    "tags": [],
+    "title": "V0.1.0",
+    "uri": "/changelog/v0.1.0/index.html"
+  },
+  {
+    "breadcrumb": "My First Cloud Journey",
+    "content": "Example content from Admin of FCJ\nOverall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.\nContent Introduction Preparation Connect to EC2 instance Manage session logs Port Forwarding Clean up resources",
+    "description": "Example content from Admin of FCJ\nOverall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.\nContent Introduction Preparation Connect to EC2 instance Manage session logs Port Forwarding Clean up resources",
     "tags": [],
     "title": "Example Content",
     "uri": "/example-content/index.html"
