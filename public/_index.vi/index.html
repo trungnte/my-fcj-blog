@@ -20,7 +20,7 @@ Nội dung Giới thiệu Các bước chuẩn bị Tạo kết nối đ�
 Nội dung Giới thiệu Các bước chuẩn bị Tạo kết nối đến máy chủ EC2 Quản lý session logs Port Forwarding Dọn dẹp tài nguyên">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
-    <meta property="article:section" content="Session Management">
+    <meta property="article:section" content="My First Cloud Journey">
     <meta property="og:image" content="http://localhost:1414/images/hero.png">
     <meta itemprop="name" content="Session Management :: My New Hugo Site">
     <meta itemprop="description" content="Làm việc với Amazon System Manager - Session Manager Tổng quan Trong bài lab này, bạn sẽ tìm hiểu các khái niệm cơ bản và thực hành về Amazon System Manager - Session Management. Thực hành tạo kết nối đến máy chủ public và máy chủ private trong VPC.
@@ -28,27 +28,27 @@ Nội dung Giới thiệu Các bước chuẩn bị Tạo kết nối đ�
     <meta itemprop="wordCount" content="74">
     <meta itemprop="image" content="http://localhost:1414/images/hero.png">
     <title>Session Management :: My New Hugo Site</title>
-    <link href="/images/favicon.png?1758723858" rel="icon" type="image/png">
-    <link href="/css/auto-complete/auto-complete.min.css?1758723858" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1758723858" defer></script>
-    <script src="/js/search-lunr.js?1758723858" defer></script>
-    <script src="/js/search.js?1758723858" defer></script>
+    <link href="/images/favicon.png?1758729406" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1758729406" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1758729406" defer></script>
+    <script src="/js/search-lunr.js?1758729406" defer></script>
+    <script src="/js/search.js?1758729406" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1758723858";
+      window.relearn.index_js_url="/searchindex.en.js?1758729406";
     </script>
-    <script src="/js/lunr/lunr.min.js?1758723858" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1758723858" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1758723858" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1758723858" defer></script>
+    <script src="/js/lunr/lunr.min.js?1758729406" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1758729406" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1758729406" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1758729406" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758723858" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758723858" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758723858" rel="stylesheet">
-    <link href="/css/theme.css?1758723858" rel="stylesheet">
-    <link href="/css/format-html.css?1758723858" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758729406" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758729406" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758729406" rel="stylesheet">
+    <link href="/css/theme.css?1758729406" rel="stylesheet">
+    <link href="/css/format-html.css?1758729406" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -129,12 +129,12 @@ Nội dung Giới thiệu Các bước chuẩn bị Tạo kết nối đ�
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Session Management</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Session Management</span><meta itemprop="position" content="2"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">My First Cloud Journey</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Session Management</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/1-introduce/_index.vi/index.html" title="Giới thiệu (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/example-content/6-cleanup/_index.vi/index.html" title="Dọn dẹp tài nguyên   (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/2-prerequiste/index.html" title="Preparation  (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -159,16 +159,16 @@ Nội dung Giới thiệu Các bước chuẩn bị Tạo kết nối đ�
 <h1 id="lam-viêc-vơi-amazon-system-manager---session-manager">Làm việc với Amazon System Manager - Session Manager</h1>
 <h3 id="tổng-quan">Tổng quan</h3>
 <p>Trong bài lab này, bạn sẽ tìm hiểu các khái niệm cơ bản và thực hành về Amazon System Manager - Session Management. Thực hành tạo kết nối đến máy chủ public và máy chủ private trong VPC.</p>
-<p><a href="#R-image-262aa0ff672a839fba667cc740e186fb" class="lightbox-link"><img alt="ConnectPrivate" class="lazy lightbox figure-image" loading="lazy" src="/images/arc-log.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-262aa0ff672a839fba667cc740e186fb"><img alt="ConnectPrivate" class="lazy lightbox lightbox-image" loading="lazy" src="/images/arc-log.png"></a></p>
+<p><a href="#R-image-b8a07dfda875ed005f7e56064689bea8" class="lightbox-link"><img alt="ConnectPrivate" class="lazy lightbox figure-image" loading="lazy" src="/images/arc-log.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b8a07dfda875ed005f7e56064689bea8"><img alt="ConnectPrivate" class="lazy lightbox lightbox-image" loading="lazy" src="/images/arc-log.png"></a></p>
 <h3 id="nội-dung">Nội dung</h3>
 <ol>
-<li><a href="/1-introduce/index.html">Giới thiệu</a></li>
-<li><a href="/2-prerequiste/index.html">Các bước chuẩn bị</a></li>
+<li><a href="/example-content/1-introduce/index.html">Giới thiệu</a></li>
+<li><a href="/example-content/2-prerequiste/index.html">Các bước chuẩn bị</a></li>
 <li><a href="3-Accessibilitytoinstance/">Tạo kết nối đến máy chủ EC2</a></li>
-<li><a href="/4-s3log/index.html">Quản lý session logs</a></li>
-<li><a href="/5-portfwd/index.html">Port Forwarding</a></li>
-<li><a href="/6-cleanup/index.html">Dọn dẹp tài nguyên</a></li>
+<li><a href="/example-content/4-s3log/index.html">Quản lý session logs</a></li>
+<li><a href="/example-content/5-portfwd/index.html">Port Forwarding</a></li>
+<li><a href="/example-content/6-cleanup/index.html">Dọn dẹp tài nguyên</a></li>
 </ol>
 
   <footer class="footline">
@@ -188,14 +188,14 @@ Nội dung Giới thiệu Các bước chuẩn bị Tạo kết nối đ�
 </a>
 
         </div>
-        <search><form action="/search/index.html" method="get">
+        <search>
           <div class="searchbox default-animation">
-            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
             <label class="a11y-only" for="R-search-by">Search</label>
             <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
             <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
           </div>
-        </form></search>
+        </search>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <div class="R-menu-divider default-animation">
@@ -220,13 +220,8 @@ Nội dung Giới thiệu Các bước chuẩn bị Tạo kết nối đ�
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/1-introduce/index.html"><a class="padding" href="/1-introduce/index.html"> <b> 1. </b> Introduction<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-91db33c5e6aa0582a58258486d3586d8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/example-content/index.html"><a class="padding" href="/example-content/index.html">Example Content<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fe971ba82fba916e0ad3ddd94b5ef90a" class="collapsible-menu"></ul></li>
             <li class="active " data-nav-id="/_index.vi/index.html"><a class="padding" href="/_index.vi/index.html">Session Management<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/2-prerequiste/index.html"><a class="padding" href="/2-prerequiste/index.html"> <b> 2. </b> Preparation <i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-447525a47cd1507dd1e2574d6dc5d168" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/3-accessibilitytoinstances/index.html"><a class="padding" href="/3-accessibilitytoinstances/index.html"> <b> 3. </b> Connect to EC2 servers<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-077c2a404bcea28721669966cca6e2bc" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/4-s3log/index.html"><a class="padding" href="/4-s3log/index.html"> <b> 4. </b> Manage session logs<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-35ace6022a6c9d388b8050812ae65c25" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/5-portfwd/index.html"><a class="padding" href="/5-portfwd/index.html"> <b> 5. </b> Port Forwarding<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-223ddfc694ae0200881c399638d901c7" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/6-cleanup/index.html"><a class="padding" href="/6-cleanup/index.html"><b>6. </b>Clean up resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-82c099f259873924fdd9e9912e6c0ee3" class="collapsible-menu"></ul></li>
           </ul>
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
@@ -290,46 +285,11 @@ Nội dung Giới thiệu Các bước chuẩn bị Tạo kết nối đ�
             </li>
           </ul>
         </div>
-<div id="R-footer">
-  
-  <b> My blog</b> <br>
-  <a href="https://www.hitwebcounter.com/" target="_blank">
-  <img src="https://hitwebcounter.com/counter/counter.php?page=21441280&style=0009&nbdigits=5&type=page&initCount=0" title="Counters" Alt="Counters"   border="0" /></a>       
-
-  <br>
-  <br>
-  <b> Last Updated </b>
-  <br>
-  <i>
-    <font color=orange>24-09-2025</font>
-  </i>
-  
-  <br>
-  <br>
-  <b> My linkedin </b>
-  <br>
-
-  <i>
-    <a href="https://www.linkedin.com/in/trung-nguyen-tien-5a63378a/"  style="color:orange">Nguyễn Tiến Trung</a>
-    <br>
-  </i>
-
-
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-</div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1758723858" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758723858" defer></script>
-    <script src="/js/theme.js?1758723858" defer></script><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-158079754-2', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    <script src="/js/clipboard/clipboard.min.js?1758729406" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758729406" defer></script>
+    <script src="/js/theme.js?1758729406" defer></script>
   </body>
 </html>

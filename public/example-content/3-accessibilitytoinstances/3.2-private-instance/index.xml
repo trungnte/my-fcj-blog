@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Connect to Private instance :: My New Hugo Site</title>
+    <link>http://localhost:1414/example-content/3-accessibilitytoinstances/3.2-private-instance/index.html</link>
+    <description>For Windows instance located in private subnet, there is no public IP, no internet gateway so it cannot go out internet.&#xA;With this type of instance, the traditional way is to use Bastion host technique which is expensive and laborious, but here we will use Session Manager with this type.&#xA;Basically, the private instance still has to open the TCP 443 port to System Manager, but we don’t want to allow connection go out to the internet, but only in its VPC, to enhance our security posture.&#xA;To do that, we have to include the System Manager endpoint in the VPC, that is, using the VPC interface endpoint:</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1414/example-content/3-accessibilitytoinstances/3.2-private-instance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enable DNS hostnames</title>
+      <link>http://localhost:1414/example-content/3-accessibilitytoinstances/3.2-private-instance/3.2.1-enablevpcdns/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1414/example-content/3-accessibilitytoinstances/3.2-private-instance/3.2.1-enablevpcdns/index.html</guid>
+      <description>Enable DNS hostnames on VPC. To create VPC Endpoint we will need to enable DNS hostnames feature on VPC. Go to VPC service management console&#xA;Click Your VPCs.&#xA;Select Lab VPC.&#xA;Click Actions.&#xA;Click Edit DNS hostnames.&#xA;Click Endpoint, then click Create Endpoint.&#xA;At the Edit DNS hostnames page. Click to select Enable. Click Save changes.</description>
+    </item>
+    <item>
+      <title>Create VPC Endpoint</title>
+      <link>http://localhost:1414/example-content/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1414/example-content/3-accessibilitytoinstances/3.2-private-instance/3.2.2-createvpcendpoint/index.html</guid>
+      <description>Create VPC Endpoint SSM We will create 3 interface endpoints required by the Session Manager:&#xA;Interface endpoints: com.amazonaws.region.ssm com.amazonaws.region.ec2messages com.amazonaws.region.ssmmessages You can refer to more here&#xA;Content: Create Endpoint ssm Create Endpoint ssmmessages Create Endpoint ec2messages</description>
+    </item>
+    <item>
+      <title>Tạo kết nối đến máy chủ EC2 Private</title>
+      <link>http://localhost:1414/example-content/3-accessibilitytoinstances/3.2-private-instance/_index.vi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1414/example-content/3-accessibilitytoinstances/3.2-private-instance/_index.vi/index.html</guid>
+      <description>Đối với Windows instance nằm trong private subnet, không có public IP, không có internet gateway nên không thể đi ra ngoài internet.&#xA;Với loại instance này, cách làm truyền thống là ta sẽ sử dụng kỹ thuật Bastion host tốn nhiều chi phí và công sức, nhưng ở đây chúng ta sẽ sử dụng Session Manager với loại này.&#xA;Cơ bản là private instance vẫn phải mở cổng TCP 443 tới System Manager, nhưng không cho kết nối đó đi ra ngoài internet mà chỉ cho đi trong chính VPC của mình, nên đảm bảo được vấn đề bảo mật.&#xA;Để làm được điều đó, ta phải đưa endpoint của System Manager vào trong VPC, nghĩa là sử dụng VPC interface endpoint:</description>
+    </item>
+    <item>
+      <title>Connect to instance</title>
+      <link>http://localhost:1414/example-content/3-accessibilitytoinstances/3.2-private-instance/3.2.3-connectec2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1414/example-content/3-accessibilitytoinstances/3.2-private-instance/3.2.3-connectec2/index.html</guid>
+      <description>Assign IAM role and restart EC2 instance. Go to EC2 service management console Click Private Windows Instance. Click Actions. Click Security. Click Modify IAM Role. At the Modify IAM Role page. In the IAM role section, select SSM-Role. Click Save. Click Private Windows Instance. Click Instance state. Click Reboot instance to restart, then click Reboot to confirm.</description>
+    </item>
+  </channel>
+</rss>

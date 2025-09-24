@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Update IAM Role :: My New Hugo Site</title>
+    <link>http://localhost:1414/example-content/4-s3log/4.1-updateiamrole/index.html</link>
+    <description>For our EC2 instances to be able to send session logs to the S3 bucket, we will need to update the IAM Role assigned to the EC2 instance by adding a policy that allows access to S3.&#xA;Update IAM Role Go to IAM service management console Click Roles. In the search box, enter SSM. Click on the SSM-Role role. Click Attach policies.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1414/example-content/4-s3log/4.1-updateiamrole/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cập nhật IAM Role</title>
+      <link>http://localhost:1414/example-content/4-s3log/4.1-updateiamrole/_index.vi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1414/example-content/4-s3log/4.1-updateiamrole/_index.vi/index.html</guid>
+      <description>Để các EC2 instance của chúng ta có thể gửi session log tới S3 bucket , chúng ta sẽ cần cập nhật IAM Role đã gán vào EC2 instance bằng cách thêm vào policy cho phép quyền truy cập vào S3.&#xA;Cập nhật IAM Role Truy cập vào giao diện quản trị dịch vụ IAM Click Roles. Tại ô tìm kiếm , điền SSM. Click vào role SSM-Role.</description>
+    </item>
+  </channel>
+</rss>

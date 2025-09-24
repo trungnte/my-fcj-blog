@@ -5,53 +5,51 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.148.2">
     <meta name="generator" content="Relearn 8.0.0+9803d5122ebb3276acea823f476e9eb44f607862">
-    <meta name="description" content="Work with Amazon System Manager - Session Manager Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.
-Content Introduction Preparation Connect to EC2 instance Manage session logs Port Forwarding Clean up resources 1-Introduce _index.md _index.vi.md 2-Prerequiste 2.1-createec2 2.1.1-createvpc _index.md _index.vi.md 2.1.2-createpublicsubnet _index .md _index.vi.md 2.1.3-createprivatesubnet _index.md _index.vi.md 2.1.4-createsecgroup _index.md _index.vi.md 2.1.5-createec2linux _index.md _index.vi.md 2.1.6-createec2windows _index.md _index.vi.md _index.md _index.vi.md 2.2-createiamrole _index.md _index.vi.md _index.md _index.vi.md 3-Accessibilitytoinstances 3.1-Public-instance _index.md _index.vi.md 3.2-Private-instance 3.2.1-enablevpcdns _index.md _index.vi.md 3.2.2-createvpcendpoint 3.2.2.1-endpointssm _index.md _index.vi.md 3.2.2.2-endpointssmmessages _index.md _index.vi.md 3.2.2.3-endpointec2messages _index.md _index.vi.md _index.md _index.vi.md 3.2.3-connectec2 _index.md _index.vi.md _index.md _index.vi.md _index.md _index.vi.md 4-s3log 4.1-updateiamrole _index.md _index.vi.md 4.2-creates3bucket _index.md _index.vi.md 4.3-creategwes3 _index.md _index.vi.md 4.4-configsessionlogs _index.md _index.vi.md _index.md _index.vi.md 5-Portfwd _index.md _index.vi.md 6-cleanup _index.md _index.vi.md _index.md _index.vi.md">
+    <meta name="description" content="This is your new home page.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="http://localhost:1414/images/hero.png">
-    <meta name="twitter:title" content="Session Management :: My New Hugo Site">
-    <meta name="twitter:description" content="Work with Amazon System Manager - Session Manager Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.
-Content Introduction Preparation Connect to EC2 instance Manage session logs Port Forwarding Clean up resources 1-Introduce _index.md _index.vi.md 2-Prerequiste 2.1-createec2 2.1.1-createvpc _index.md _index.vi.md 2.1.2-createpublicsubnet _index .md _index.vi.md 2.1.3-createprivatesubnet _index.md _index.vi.md 2.1.4-createsecgroup _index.md _index.vi.md 2.1.5-createec2linux _index.md _index.vi.md 2.1.6-createec2windows _index.md _index.vi.md _index.md _index.vi.md 2.2-createiamrole _index.md _index.vi.md _index.md _index.vi.md 3-Accessibilitytoinstances 3.1-Public-instance _index.md _index.vi.md 3.2-Private-instance 3.2.1-enablevpcdns _index.md _index.vi.md 3.2.2-createvpcendpoint 3.2.2.1-endpointssm _index.md _index.vi.md 3.2.2.2-endpointssmmessages _index.md _index.vi.md 3.2.2.3-endpointec2messages _index.md _index.vi.md _index.md _index.vi.md 3.2.3-connectec2 _index.md _index.vi.md _index.md _index.vi.md _index.md _index.vi.md 4-s3log 4.1-updateiamrole _index.md _index.vi.md 4.2-creates3bucket _index.md _index.vi.md 4.3-creategwes3 _index.md _index.vi.md 4.4-configsessionlogs _index.md _index.vi.md _index.md _index.vi.md 5-Portfwd _index.md _index.vi.md 6-cleanup _index.md _index.vi.md _index.md _index.vi.md">
+    <meta name="twitter:title" content="My First Cloud Journey :: My New Hugo Site">
+    <meta name="twitter:description" content="This is your new home page.">
     <meta property="og:url" content="http://localhost:1414/index.html">
     <meta property="og:site_name" content="My New Hugo Site">
-    <meta property="og:title" content="Session Management :: My New Hugo Site">
-    <meta property="og:description" content="Work with Amazon System Manager - Session Manager Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.
-Content Introduction Preparation Connect to EC2 instance Manage session logs Port Forwarding Clean up resources 1-Introduce _index.md _index.vi.md 2-Prerequiste 2.1-createec2 2.1.1-createvpc _index.md _index.vi.md 2.1.2-createpublicsubnet _index .md _index.vi.md 2.1.3-createprivatesubnet _index.md _index.vi.md 2.1.4-createsecgroup _index.md _index.vi.md 2.1.5-createec2linux _index.md _index.vi.md 2.1.6-createec2windows _index.md _index.vi.md _index.md _index.vi.md 2.2-createiamrole _index.md _index.vi.md _index.md _index.vi.md 3-Accessibilitytoinstances 3.1-Public-instance _index.md _index.vi.md 3.2-Private-instance 3.2.1-enablevpcdns _index.md _index.vi.md 3.2.2-createvpcendpoint 3.2.2.1-endpointssm _index.md _index.vi.md 3.2.2.2-endpointssmmessages _index.md _index.vi.md 3.2.2.3-endpointec2messages _index.md _index.vi.md _index.md _index.vi.md 3.2.3-connectec2 _index.md _index.vi.md _index.md _index.vi.md _index.md _index.vi.md 4-s3log 4.1-updateiamrole _index.md _index.vi.md 4.2-creates3bucket _index.md _index.vi.md 4.3-creategwes3 _index.md _index.vi.md 4.4-configsessionlogs _index.md _index.vi.md _index.md _index.vi.md 5-Portfwd _index.md _index.vi.md 6-cleanup _index.md _index.vi.md _index.md _index.vi.md">
+    <meta property="og:title" content="My First Cloud Journey :: My New Hugo Site">
+    <meta property="og:description" content="This is your new home page.">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1414/images/hero.png">
-    <meta itemprop="name" content="Session Management :: My New Hugo Site">
-    <meta itemprop="description" content="Work with Amazon System Manager - Session Manager Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.
-Content Introduction Preparation Connect to EC2 instance Manage session logs Port Forwarding Clean up resources 1-Introduce _index.md _index.vi.md 2-Prerequiste 2.1-createec2 2.1.1-createvpc _index.md _index.vi.md 2.1.2-createpublicsubnet _index .md _index.vi.md 2.1.3-createprivatesubnet _index.md _index.vi.md 2.1.4-createsecgroup _index.md _index.vi.md 2.1.5-createec2linux _index.md _index.vi.md 2.1.6-createec2windows _index.md _index.vi.md _index.md _index.vi.md 2.2-createiamrole _index.md _index.vi.md _index.md _index.vi.md 3-Accessibilitytoinstances 3.1-Public-instance _index.md _index.vi.md 3.2-Private-instance 3.2.1-enablevpcdns _index.md _index.vi.md 3.2.2-createvpcendpoint 3.2.2.1-endpointssm _index.md _index.vi.md 3.2.2.2-endpointssmmessages _index.md _index.vi.md 3.2.2.3-endpointec2messages _index.md _index.vi.md _index.md _index.vi.md 3.2.3-connectec2 _index.md _index.vi.md _index.md _index.vi.md _index.md _index.vi.md 4-s3log 4.1-updateiamrole _index.md _index.vi.md 4.2-creates3bucket _index.md _index.vi.md 4.3-creategwes3 _index.md _index.vi.md 4.4-configsessionlogs _index.md _index.vi.md _index.md _index.vi.md 5-Portfwd _index.md _index.vi.md 6-cleanup _index.md _index.vi.md _index.md _index.vi.md">
-    <meta itemprop="wordCount" content="129">
+    <meta itemprop="name" content="My First Cloud Journey :: My New Hugo Site">
+    <meta itemprop="description" content="This is your new home page.">
+    <meta itemprop="datePublished" content="1970-01-01T08:33:42+08:00">
+    <meta itemprop="dateModified" content="1970-01-01T08:33:42+08:00">
+    <meta itemprop="wordCount" content="6">
     <meta itemprop="image" content="http://localhost:1414/images/hero.png">
-    <title>Session Management :: My New Hugo Site</title>
+    <title>My First Cloud Journey :: My New Hugo Site</title>
     <link href="http://localhost:1414/index.html" rel="alternate" hreflang="x-default">
     <link href="http://localhost:1414/index.html" rel="alternate" hreflang="en">
     <link href="http://localhost:1414/vn/index.html" rel="alternate" hreflang="vn">
-    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Session Management :: My New Hugo Site">
-    <link href="/images/favicon.png?1758725647" rel="icon" type="image/png">
-    <link href="/css/auto-complete/auto-complete.min.css?1758725647" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1758725647" defer></script>
-    <script src="/js/search-lunr.js?1758725647" defer></script>
-    <script src="/js/search.js?1758725647" defer></script>
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="My First Cloud Journey :: My New Hugo Site">
+    <link href="/images/favicon.png?1758729492" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1758729492" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1758729492" defer></script>
+    <script src="/js/search-lunr.js?1758729492" defer></script>
+    <script src="/js/search.js?1758729492" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1758725647";
+      window.relearn.index_js_url="/searchindex.en.js?1758729492";
     </script>
-    <script src="/js/lunr/lunr.min.js?1758725647" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1758725647" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1758725647" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1758725647" defer></script>
+    <script src="/js/lunr/lunr.min.js?1758729492" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1758729492" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1758729492" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1758729492" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758725647" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758725647" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758725647" rel="stylesheet">
-    <link href="/css/theme.css?1758725647" rel="stylesheet">
-    <link href="/css/format-html.css?1758725647" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758729492" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758729492" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758729492" rel="stylesheet">
+    <link href="/css/theme.css?1758729492" rel="stylesheet">
+    <link href="/css/format-html.css?1758729492" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -117,27 +115,17 @@ Content Introduction Preparation Connect to EC2 instance Manage session logs Por
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper">
-<nav class="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#overall">Overall</a></li>
-        <li><a href="#content">Content</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+                <div class="topbar-content-wrapper"> 
                 </div>
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Session Management</span><meta itemprop="position" content="1"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">My First Cloud Journey</span><meta itemprop="position" content="1"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-left"></i></span>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/1-introduce/index.html" title="Introduction (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/example-content/index.html" title="Example Content (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -151,167 +139,18 @@ Content Introduction Preparation Connect to EC2 instance Manage session logs Por
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable page" tabindex="-1">
+      <main id="R-body-inner" class="highlightable home" tabindex="-1">
         <div class="flex-block-wrapper">
-<article class="default">
+<article class="home">
   <header class="headline">
   </header>
 
-<h1 id="session-management">Session Management</h1>
+<h1 id="my-first-cloud-journey">My First Cloud Journey</h1>
 
-<h1 id="work-with-amazon-system-manager---session-manager">Work with Amazon System Manager - Session Manager</h1>
-<h3 id="overall">Overall</h3>
-<p>In this lab, you&rsquo;ll learn the basics and practice of Amazon  System Manager - Session Manager
-. Perform creating public and private instance connections.</p>
-<p><a href="#R-image-fb4a0894cd7ceac8ddac0a2a684dcd47" class="lightbox-link"><img alt="ConnectPrivate" class="lazy lightbox figure-image" loading="lazy" src="/images/arc-log.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fb4a0894cd7ceac8ddac0a2a684dcd47"><img alt="ConnectPrivate" class="lazy lightbox lightbox-image" loading="lazy" src="/images/arc-log.png"></a></p>
-<h3 id="content">Content</h3>
-<ol>
-<li><a href="/1-introduce/index.html">Introduction </a></li>
-<li><a href="/2-prerequiste/index.html">Preparation</a></li>
-<li><a href="/3-accessibilitytoinstances/index.html">Connect to EC2 instance</a></li>
-<li><a href="/4-s3log/index.html">Manage session logs</a></li>
-<li><a href="/5-portfwd/index.html">Port Forwarding</a></li>
-<li><a href="/6-cleanup/index.html">Clean up resources</a></li>
-</ol>
-
-<div class="list-tree"><ul>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>1-Introduce</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>2-Prerequiste</span><ul>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>2.1-createec2</span><ul>
-<li><i class="fa-fw fas fa-folder"></i><span>2.1.1-createvpc</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder"></i><span>2.1.2-createpublicsubnet</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index .md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder"></i><span>2.1.3-createprivatesubnet</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder"></i><span>2.1.4-createsecgroup</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder"></i><span>2.1.5-createec2linux</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder"></i><span>2.1.6-createec2windows</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>2.2-createiamrole</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>3-Accessibilitytoinstances</span><ul>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>3.1-Public-instance</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>3.2-Private-instance</span><ul>
-<li><i class="fa-fw fas fa-folder"></i><span>3.2.1-enablevpcdns</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder"></i><span>3.2.2-createvpcendpoint</span><ul>
-<li><i class="fa-fw fas fa-folder"></i><span>3.2.2.1-endpointssm</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder"></i><span>3.2.2.2-endpointssmmessages</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder"></i><span>3.2.2.3-endpointec2messages</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder"></i><span>3.2.3-connectec2</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>4-s3log</span><ul>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>4.1-updateiamrole</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>4.2-creates3bucket</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>4.3-creategwes3</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>4.4-configsessionlogs</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>5-Portfwd</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fas fa-folder cstyle secondary"></i><span>6-cleanup</span><ul>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown"></i><span>_index.vi.md</span></li>
-</ul>
-</li>
-<li><i class="fa-fw fab fa-markdown" style="color: purple;"></i><span>_index.md</span></li>
-<li><i class="fa-fw fab fa-markdown" style="color: purple;"></i><span>_index.vi.md</span></li>
-</ul>
-</div>
+<p>This is your new home page.</p>
 
   <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Jan 1, 1970
   </footer>
 </article>
         </div>
@@ -328,14 +167,14 @@ Content Introduction Preparation Connect to EC2 instance Manage session logs Por
 </a>
 
         </div>
-        <search><form action="/search/index.html" method="get">
+        <search>
           <div class="searchbox default-animation">
-            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
             <label class="a11y-only" for="R-search-by">Search</label>
             <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
             <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
           </div>
-        </form></search>
+        </search>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <div class="R-menu-divider default-animation">
@@ -360,13 +199,7 @@ Content Introduction Preparation Connect to EC2 instance Manage session logs Por
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/1-introduce/index.html"><a class="padding" href="/1-introduce/index.html"> <b> 1. </b> Introduction<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-91db33c5e6aa0582a58258486d3586d8" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/_index.vi/index.html"><a class="padding" href="/_index.vi/index.html">Session Management<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/2-prerequiste/index.html"><a class="padding" href="/2-prerequiste/index.html"> <b> 2. </b> Preparation <i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-447525a47cd1507dd1e2574d6dc5d168" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/3-accessibilitytoinstances/index.html"><a class="padding" href="/3-accessibilitytoinstances/index.html"> <b> 3. </b> Connect to EC2 servers<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-077c2a404bcea28721669966cca6e2bc" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/4-s3log/index.html"><a class="padding" href="/4-s3log/index.html"> <b> 4. </b> Manage session logs<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-35ace6022a6c9d388b8050812ae65c25" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/5-portfwd/index.html"><a class="padding" href="/5-portfwd/index.html"> <b> 5. </b> Port Forwarding<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-223ddfc694ae0200881c399638d901c7" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/6-cleanup/index.html"><a class="padding" href="/6-cleanup/index.html"><b>6. </b>Clean up resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-82c099f259873924fdd9e9912e6c0ee3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/example-content/index.html"><a class="padding" href="/example-content/index.html">Example Content<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fe971ba82fba916e0ad3ddd94b5ef90a" class="collapsible-menu"></ul></li>
           </ul>
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
@@ -434,8 +267,8 @@ Content Introduction Preparation Connect to EC2 instance Manage session logs Por
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1758725647" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758725647" defer></script>
-    <script src="/js/theme.js?1758725647" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1758729492" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758729492" defer></script>
+    <script src="/js/theme.js?1758729492" defer></script>
   </body>
 </html>
