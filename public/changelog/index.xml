@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChangeLog :: My New Hugo Site</title>
+    <link>http://localhost:1414/changelog/index.html</link>
+    <description>Change Log v0.1.0</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Sep 2025 23:11:56 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1414/changelog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Version 0.1.0</title>
+      <link>http://localhost:1414/changelog/version-0.1.0/index.html</link>
+      <pubDate>Wed, 24 Sep 2025 23:11:56 +0700</pubDate>
+      <guid>http://localhost:1414/changelog/version-0.1.0/index.html</guid>
+      <description>Manage example content Add change log version 0.1.0</description>
+    </item>
+  </channel>
+</rss>
