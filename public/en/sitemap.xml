@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1414/changelog/index.html</loc>
+    <loc>http://localhost:1414/changelog/version-0.1.0/index.html</loc>
     <lastmod>2025-09-24T23:11:56+07:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1414/changelog/v0.1.0/index.html</loc>
+    <loc>http://localhost:1414/changelog/index.html</loc>
     <lastmod>2025-09-24T23:11:56+07:00</lastmod>
   </url>
   <url>

@@ -1,19 +1,19 @@
 var relearn_searchindex = [
   {
+    "breadcrumb": "My First Cloud Journey \u003e ChangeLog",
+    "content": "Manage example content Add change log version 0.1.0",
+    "description": "Manage example content Add change log version 0.1.0",
+    "tags": [],
+    "title": " Version 0.1.0",
+    "uri": "/changelog/version-0.1.0/index.html"
+  },
+  {
     "breadcrumb": "My First Cloud Journey",
     "content": "Change Log v0.1.0",
     "description": "Change Log v0.1.0",
     "tags": [],
     "title": "ChangeLog",
     "uri": "/changelog/index.html"
-  },
-  {
-    "breadcrumb": "My First Cloud Journey \u003e ChangeLog",
-    "content": "Manage example content Add change log version 0.1.0",
-    "description": "Manage example content Add change log version 0.1.0",
-    "tags": [],
-    "title": "V0.1.0",
-    "uri": "/changelog/v0.1.0/index.html"
   },
   {
     "breadcrumb": "My First Cloud Journey",
