@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'My Site'
 
 theme = 'hugo-theme-relearn'
+# relativeURLs = false
+canonifyURLs = true
 
 [module]
   [[module.imports]]
@@ -12,10 +14,6 @@ theme = 'hugo-theme-relearn'
   email = 'trung.nt.e@gmail.com'
   name = 'Tien Trung'
 
-[caches]
-    [caches.images]
-        dir    = ':resourceDir/:project'
-        maxAge = "800h" # or some high value
 
 [languages]
   [languages.en]
@@ -33,7 +31,7 @@ theme = 'hugo-theme-relearn'
 [params]
   # linkTitle = 'Relearn'
   # disableLandingPageButton = true # Show/Hide Home Page
-  canonifyURLs = true
+  
 
 # History
   showVisitedLinks=true 
