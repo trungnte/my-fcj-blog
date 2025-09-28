@@ -28,6 +28,7 @@ To run this blog locally, you will need to have Hugo installed on your machine.
 
 {{% notice color="green" style="code" title="Shell" icon="fa-solid fa-terminal" %}}
 git clone https://github.com/trungnte/my-fcj-blog.git
+
 cd my-fcj-blog
 {{% /notice %}}
 

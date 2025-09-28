@@ -13,8 +13,9 @@ theme = 'hugo-theme-relearn'
   name = 'Tien Trung'
 
 [caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+    [caches.images]
+        dir    = ':resourceDir/:project'
+        maxAge = "-1" # or some high value
 
 [languages]
   [languages.en]
