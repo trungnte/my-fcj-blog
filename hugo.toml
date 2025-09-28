@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://trungnte.github.io/my-fcj-blog'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'My Site'
 
 theme = 'hugo-theme-relearn'
 
