@@ -12,10 +12,6 @@ theme = 'hugo-theme-relearn'
   email = 'trung.nt.e@gmail.com'
   name = 'Tien Trung'
 
-[caches]
-    [caches.images]
-        dir    = ':resourceDir/:project'
-        maxAge = "800h" # or some high value
 
 [languages]
   [languages.en]
