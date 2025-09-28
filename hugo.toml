@@ -33,6 +33,7 @@ theme = 'hugo-theme-relearn'
 [params]
   # linkTitle = 'Relearn'
   # disableLandingPageButton = true # Show/Hide Home Page
+  canonifyURLs = true
 
 # History
   showVisitedLinks=true 
