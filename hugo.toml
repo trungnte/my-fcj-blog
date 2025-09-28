@@ -3,7 +3,8 @@ languageCode = 'en-us'
 title = 'My Site'
 
 theme = 'hugo-theme-relearn'
-relativeURLs = false
+# relativeURLs = false
+canonifyURLs = true
 
 [module]
   [[module.imports]]
@@ -30,7 +31,7 @@ relativeURLs = false
 [params]
   # linkTitle = 'Relearn'
   # disableLandingPageButton = true # Show/Hide Home Page
-  canonifyURLs = true
+  
 
 # History
   showVisitedLinks=true 
