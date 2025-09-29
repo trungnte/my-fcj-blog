@@ -52,13 +52,14 @@ canonifyURLs = true
   showVisitedLinks=true 
 
   themeVariant = [
+    { identifier = 'zen-dark'       },
     { identifier = 'learn'          },
     { identifier = 'relearn-auto',  name = 'Relearn Light/Dark', auto = [ 'relearn-light', 'relearn-dark' ] },
     { identifier = 'relearn-dark'   },
     { identifier = 'relearn-light'  },
     { identifier = 'relearn-bright' },
     { identifier = 'zen-auto',      name = 'Zen Light/Dark', auto = [ 'zen-light', 'zen-dark' ] },
-    { identifier = 'zen-dark'       },
+    
     { identifier = 'zen-light'      },
     { identifier = 'retro-auto',    name = 'Retro Learn/Neon', auto = [ 'learn', 'neon' ] },
     { identifier = 'neon'           },
