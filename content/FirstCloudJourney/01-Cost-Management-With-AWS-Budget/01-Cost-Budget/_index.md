@@ -1,7 +1,7 @@
 +++
 date = '2025-09-28T22:33:12+07:00'
 # draft = true
-title = '01 Cost Budget'
+title = 'Cost Budget'
 weight = 3
 +++
 

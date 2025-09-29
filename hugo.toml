@@ -28,12 +28,20 @@ canonifyURLs = true
     [languages.vn.params]
       landingPageName = '<i class="fa-fw fas fa-home"></i> Trang chủ'
 
+[outputs]
+  home = ['html', 'rss', 'markdown', 'source']
+  page = ['html', 'markdown', 'source']
+  section = ['html', 'rss', 'markdown', 'source']
+
+
 [params]
   # linkTitle = 'Relearn'
   # disableLandingPageButton = true # Show/Hide Home Page
   
+  # alwaysopen=true
+  # collapsibleMenu=true
 
-# History
+  # History
   showVisitedLinks=true 
 
   themeVariant = [
