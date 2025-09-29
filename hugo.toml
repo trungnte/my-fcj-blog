@@ -21,12 +21,19 @@ canonifyURLs = true
     languageName = "English"
     [languages.en.params]
       landingPageName = '<i class="fa-fw fas fa-home"></i> Home'
-
+    
   [languages.vn]
     weight = 2
     languageName = "Tiếng Việt"
     [languages.vn.params]
       landingPageName = '<i class="fa-fw fas fa-home"></i> Trang chủ'
+
+[menu]
+  [[menu.shortcuts]]
+    pre = '<i class="fa-fw fab fa-github"></i> '
+    name = 'GitHub Repo'
+    url = 'https://github.com/trungnte/my-fcj-blog'
+    weight = 1
 
 [outputs]
   home = ['html', 'rss', 'markdown', 'source']

@@ -5,7 +5,6 @@ weight = 1
 
 [params]
   menuPre = '<i class="fa-solid fa-route"></i> '
-#   menuPre = '<i class="fab fa-github"></i> '
 
 +++
 
