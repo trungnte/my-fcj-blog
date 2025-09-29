@@ -1,7 +1,7 @@
 +++
 date = '2025-09-28T22:33:12+07:00'
 # draft = true
-title = 'Cost Budget'
+title = 'Budget'
 weight = 3
 +++
 
@@ -13,22 +13,22 @@ In this session, we will learn how to quicly create AWS Budget using the templat
 
 ### 1. Navigate Billing and Cost Management
 
-- Sign in to AWS Console
+- Sign in to **AWS Console**
 - Search and select service **Billing and Cost Management** in the service search bar
 
 
-![Billing and Cost Management](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/01-choose-billing-and-cost-management.png)
+![Billing and Cost Management](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Budget/01-choose-billing-and-cost-management.png)
 
 ---
 
 ### 2. Navigate to the Budgets section
 
-- In the left navigation pane, select Budgets
-- Click the Create a budget button
+- In the left navigation pane, select **Budgets**
+- Click the **Create a budget** button
 
-![02](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/02-choose-budgets-on-left-menu.png)
+![02](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Budget/02-choose-budgets-on-left-menu.png)
 
-![03](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/03-choose-create-budget-on-top-right.png)
+![03](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Budget/03-choose-create-budget-on-top-right.png)
 
 ---
 
@@ -38,7 +38,7 @@ In this session, we will learn how to quicly create AWS Budget using the templat
 - From the **Templates**, select **Monthly cost budget**
 
 
-![04](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/04-create-monthly-budget1.png)
+![04](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Budget/04-create-monthly-budget1.png)
 
 ---
 
@@ -49,7 +49,7 @@ In this session, we will learn how to quicly create AWS Budget using the templat
 - Review the **email recipients** for alerts
 - Click **Create budget** to finalize
 
-![04](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/04-create-monthly-budget2.png)
+![04](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Budget/04-create-monthly-budget2.png)
 
 ---
 
@@ -58,12 +58,12 @@ In this session, we will learn how to quicly create AWS Budget using the templat
 - We will see a confirmation message
 - Our new budget will appear in the budgets list
 
-![05](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/05-confirm-create-budget-success.png)
+![05](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Budget/05-confirm-create-budget-success.png)
 
 ---
 
 ### 6. Monitor budget health and alerts
 
 - Check the Budget health section to see current status
-![05](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/05-confirm-create-budget-success2.png)
+![05](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Budget/05-confirm-create-budget-success2.png)
 
