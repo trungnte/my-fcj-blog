@@ -5,13 +5,13 @@ title = 'Cost Budget'
 weight = 3
 +++
 
-### Overview
+## Overview
 
 In this session, we will learn how to quicly create AWS Budget using the template provided by AWS.
 
-### How to start
+## How to start
 
-**1. Navigate Billing and Cost Management**
+### 1. Navigate Billing and Cost Management
 
 - Sign in to AWS Console
 - Search and select service **Billing and Cost Management** in the service search bar
@@ -19,9 +19,9 @@ In this session, we will learn how to quicly create AWS Budget using the templat
 
 ![Billing and Cost Management](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/01-choose-billing-and-cost-management.png)
 
+---
 
-
-**2. Navigate to the Budgets section**
+### 2. Navigate to the Budgets section
 
 - In the left navigation pane, select Budgets
 - Click the Create a budget button
@@ -30,8 +30,9 @@ In this session, we will learn how to quicly create AWS Budget using the templat
 
 ![03](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/03-choose-create-budget-on-top-right.png)
 
+---
 
-**3. Select the template option for budget setup**
+### 3. Select the template option for budget setup
 
 - Choose **Use a template (simplified)**
 - From the **Templates**, select **Monthly cost budget**
@@ -39,7 +40,9 @@ In this session, we will learn how to quicly create AWS Budget using the templat
 
 ![04](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/04-create-monthly-budget1.png)
 
-**4. Configure your budget settings**
+---
+
+### 4. Configure your budget settings
 
 - Enter a **descriptive name** for our budget
 - Set your monthly budget **amount**
@@ -48,14 +51,18 @@ In this session, we will learn how to quicly create AWS Budget using the templat
 
 ![04](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/04-create-monthly-budget2.png)
 
-**5. Verify your budget has been created successfully**
+---
+
+### 5. Verify your budget has been created successfully
 
 - We will see a confirmation message
 - Our new budget will appear in the budgets list
 
 ![05](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/05-confirm-create-budget-success.png)
 
-**6. Monitor budget health and alerts**
+---
+
+### 6. Monitor budget health and alerts
 
 - Check the Budget health section to see current status
 ![05](/images/FirstCloudJourney/01-Cost-Management-With-AWS-Budget/01-Cost-Budget/05-confirm-create-budget-success2.png)
