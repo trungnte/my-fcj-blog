@@ -3,6 +3,9 @@ date = '2025-09-28T22:33:12+07:00'
 # draft = true
 title = 'Budget'
 weight = 3
+[params]
+  menuPre = '<i class="fa-solid fa-money-bill-trend-up"></i> '
+
 +++
 
 ## Overview

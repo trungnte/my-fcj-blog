@@ -3,10 +3,10 @@ date = '2025-10-11T12:53:29+07:00'
 # draft = true
 title = 'Basic Storage'
 weight = 3
+[params]
+  menuPre = '<i class="fa-solid fa-warehouse"></i> '
 +++
 
-> [!CAUTION]
-> TODO: Will reformat table
 
 ## 1. Type of storage:
 

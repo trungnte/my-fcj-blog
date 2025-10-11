@@ -3,6 +3,8 @@ date = '2025-10-01T22:04:59+07:00'
 # draft = true
 title = 'Reserved Instances Budget'
 weight = 6
+[params]
+  menuPre = '<i class="fa-solid fa-money-bill-trend-up"></i> '
 +++
 
 ## Overview
