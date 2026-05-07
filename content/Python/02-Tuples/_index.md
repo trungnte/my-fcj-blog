@@ -7,7 +7,7 @@ weight = 3
 
 ## 1. Overview
 
-> [!IMPORTANCE]
+> [!IMPORTANT]
 > - A Tuple is rather similar to a list, but is defined using round brackets, ().
 > - Tuples can contain multiple elements, and the elements may not share the same type. The key difference is that tuples are `immutable`, so that once a tuple is created it cannot subsequently be changed. `(It can be extended - but this is effectively the creation of a new, larger tuple!)`.
 > - As a lists, the indivisual elements of a tuple can be accessed using `[index]` after the tuple name.
@@ -25,7 +25,7 @@ weight = 3
 
 ## 2. Convert to list and vice versa
 
-> [!NOTICE]
+> [!NOTE]
 > A tuple can be converted into a list and vice versa
 
 {{% notice color="green" style="code" title="Shell" icon="fa-solid fa-terminal" %}}
