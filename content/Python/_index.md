@@ -12,5 +12,5 @@ Some NOTE when I am learning Python
 
 - [01-Lists](01-Lists)
 - [02-Tuples](02-Tuples)
-- Set
-- Dictionary
+- [03-Dictionaries](03-Dictionaries)
+- [04-Sets](04-Sets)
