@@ -14,18 +14,21 @@ weight = 3
 
 - Các phần tử trong `list` có kiểu dữ liệu `data type` có thể không giống nhau.
 
-```c
+{{% notice color="green" style="code" title="Shell" icon="fa-solid fa-terminal" %}}
+```python
 >>> a = [3.2, 'hello', [4, 7, 17.1]]
 >>> print(a)
 [3.2, 'hello', [4, 7, 17.1]]
 >>> type(a)
 <class 'list'>
->>> 
+>>>
 ```
+{{% /notice %}}
 
 ### 2. Copy một list
 
-```c
+{{% notice color="green" style="code" title="Shell" icon="fa-solid fa-terminal" %}}
+```python
 >>> a = [1, 2, 3]
 >>> b = a
 >>> print(a, b)
@@ -33,8 +36,9 @@ weight = 3
 >>> b.sort(reverse = True)
 >>> print(a, b)
 [3, 2, 1] [3, 2, 1]
->>> 
-```
+>>>
+``` 
+{{% /notice %}}
 
 - Thật thú vị, gán biến b = a, thì Python không clone data ra mà trỏ luôn vùng nhớ của a cho b.
 
@@ -42,7 +46,8 @@ weight = 3
 
 #### 2.1 Shallow copy
 
-```c
+{{% notice color="green" style="code" title="Shell" icon="fa-solid fa-terminal" %}}
+```python
 >>> a = [1, 2, 3]
 >>> b = a.copy()
 >>> print(a, b)
@@ -50,27 +55,33 @@ weight = 3
 >>> b.sort(reverse = True)
 >>> print(a, b)
 [1, 2, 3] [3, 2, 1]
->>> 
-```
+>>>
+``` 
+{{% /notice %}}
 
-> Chỉ đơn giản là dùng hàm `copy` để clone data
-> Cách khác là dùng `slicing` để copy data
+> [!IMPORTANT]
+> - Chỉ đơn giản là dùng hàm `copy` để clone data
+> - Cách khác là dùng `slicing` để copy data
 
-```c
+{{% notice color="green" style="code" title="Shell" icon="fa-solid fa-terminal" %}}
+```python
 >>> c = a[0:1]
 >>> print(a, c)
 [1, 2, 3] [1]
 >>> a.sort(reverse = True)
 >>> print(a, c)
 [3, 2, 1] [1]
->>> 
-```
+>>>
+``` 
+{{% /notice %}}
 
 #### 2.2 Deep copy
 
+> [!IMPORTANT]
 > Dùng cho `nested lists` để chắc chắc rằng tất cả các phần tử trong các đối tượng bên trong list đều được copy và độc lập
 
-```c
+{{% notice color="green" style="code" title="Shell" icon="fa-solid fa-terminal" %}}
+```python
 >>> a = [1, 2, 3, [5, 6, 7], [11, 12, 15]]
 >>> print(a)
 [1, 2, 3, [5, 6, 7], [11, 12, 15]]
@@ -83,6 +94,7 @@ weight = 3
 [1, 100, 3, [5, 6, 7], [11, 12, 15]]
 >>> print(deep_copy)
 [1, 2, 3, [5, 6, 7], [11, 12, 15]]
->>> 
-```
+>>>
+``` 
+{{% /notice %}}
 

@@ -11,6 +11,6 @@ weight = 2
 Some NOTE when I am learning Python
 
 - [01-Lists](01-Lists)
-- Tuples
+- [02-Tuples](02-Tuples)
 - Set
 - Dictionary
