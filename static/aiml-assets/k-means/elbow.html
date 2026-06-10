@@ -21,6 +21,9 @@
         
         .control-panel {
             margin: 20px 0;
+            display: flex;
+            gap: 15px;
+            align-items: center;
         }
         button {
             background-color: #3498db;
@@ -36,6 +39,11 @@
         }
         button:hover { background-color: #2980b9; transform: translateY(-2px); }
         button:disabled { background-color: #bdc3c7; cursor: not-allowed; }
+        
+        .btn-refresh {
+            background-color: #2ecc71;
+        }
+        .btn-refresh:hover { background-color: #27ae60; }
 
         .container {
             display: flex;
@@ -65,9 +73,47 @@
         #status {
             font-weight: bold;
             color: #e67e22;
-            margin-top: 10px;
+            text-align: center;
+            margin-top: 5px;
             height: 20px;
         }
+
+        /* Thành phần mới: Box hiển thị dữ liệu thô */
+        .data-box {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+            padding: 20px;
+            width: 100%;
+            max-width: 1120px;
+            margin-top: 30px;
+            box-sizing: border-box;
+        }
+        .data-table-container {
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+        th {
+            background-color: #f8fafc;
+            position: sticky;
+            top: 0;
+            color: #475569;
+        }
+        tr:hover { background-color: #f8fafc; }
+
         .explanation {
             background-color: #e8f4f8;
             border-left: 5px solid #3498db;
@@ -86,9 +132,10 @@
     <p>Hệ thống tạo ngẫu nhiên dữ liệu thuộc <b>4 cụm thực tế</b>. Chúng ta sẽ chạy thử K từ 1 đến 6 để tìm ra độ lỗi WCSS (Tổng bình phương khoảng cách) và vẽ đồ thị Elbow.</p>
 
     <div class="control-panel">
+        <button id="refreshBtn" class="btn-refresh" onclick="refreshData()">Tạo Lại Data Mới</button>
         <button id="startBtn" onclick="runElbowSimulation()">Chạy Mô Phỏng (Simulate)</button>
-        <div id="status">Sẵn sàng...</div>
     </div>
+    <div id="status">Sẵn sàng... Bạn có thể xem trước dữ liệu ở bảng bên dưới!</div>
 
     <div class="container">
         <div class="card">
@@ -101,6 +148,25 @@
             <div style="width: 100%; height: 400px; display: flex; align-items: center;">
                 <canvas id="elbowChart"></canvas>
             </div>
+        </div>
+    </div>
+
+    <div class="data-box">
+        <h2 style="margin-top:0; font-size: 1.2rem; color: #34495e;">📊 Bảng Dữ Liệu Khởi Tạo Khảo Sát (Raw Data)</h2>
+        <div style="font-size: 0.9rem; color: #7f8c8d;">Tổng số lượng mẫu: <span id="dataCount" style="font-weight:bold; color:#3498db">0</span> điểm dữ liệu (mỗi điểm gồm tọa độ X và Y trên không gian 2D).</div>
+        <div class="data-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tọa độ X</th>
+                        <th>Tọa độ Y</th>
+                        <th>Cụm Chỉ Định (K-Means)</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTableBody">
+                    </tbody>
+            </table>
         </div>
     </div>
 
@@ -128,15 +194,48 @@
                 {x: 120, y: 300},
                 {x: 280, y: 280}
             ];
-            // Tạo 35 điểm xung quanh mỗi tâm
+            // Tạo 25 điểm xung quanh mỗi tâm (giảm bớt chút cho bảng gọn, tổng 100 điểm)
             centers.forEach(c => {
-                for(let i=0; i<35; i++) {
+                for(let i=0; i<25; i++) {
                     points.push({
-                        x: c.x + (Math.random() - 0.5) * 70,
-                        y: c.y + (Math.random() - 0.5) * 70,
+                        x: Math.round(c.x + (Math.random() - 0.5) * 70),
+                        y: Math.round(c.y + (Math.random() - 0.5) * 70),
                         cluster: -1
                     });
                 }
+            });
+        }
+
+        // Cập nhật bảng dữ liệu thô hiển thị ra HTML
+        function updateDataTable(assignments = []) {
+            const tbody = document.getElementById('dataTableBody');
+            document.getElementById('dataCount').innerText = points.length;
+            tbody.innerHTML = '';
+
+            points.forEach((p, idx) => {
+                const tr = document.createElement('tr');
+                
+                const tdIdx = document.createElement('td');
+                tdIdx.innerText = idx + 1;
+                
+                const tdX = document.createElement('td');
+                tdX.innerText = p.x;
+                
+                const tdY = document.createElement('td');
+                tdY.innerText = p.y;
+                
+                const tdCluster = document.createElement('td');
+                if (assignments.length > 0) {
+                    tdCluster.innerHTML = `<span style="color:${colors[assignments[idx]]}; font-weight:bold;">Cụm ${assignments[idx] + 1}</span>`;
+                } else {
+                    tdCluster.innerHTML = `<span style="color:#95a5a6; font-style:italic;">Chưa phân cụm</span>`;
+                }
+
+                tr.appendChild(tdIdx);
+                tr.appendChild(tdX);
+                tr.appendChild(tdY);
+                tr.appendChild(tdCluster);
+                tbody.appendChild(tr);
             });
         }
 
@@ -173,7 +272,6 @@
 
         // 2. Thuật toán K-means rút gọn để tính nhanh WCSS cho từng K
         function runKMeans(K) {
-            // Khởi tạo ngẫu nhiên K tâm cụm từ các điểm có sẵn
             let centroids = [];
             let shuffled = [...points].sort(() => 0.5 - Math.random());
             for(let i=0; i<K; i++) centroids.push({x: shuffled[i].x, y: shuffled[i].y});
@@ -184,7 +282,6 @@
 
             while(changed && maxIterations-- > 0) {
                 changed = false;
-                // Gán điểm vào tâm gần nhất
                 points.forEach((p, pIdx) => {
                     let minDist = Infinity;
                     let closestCluster = -1;
@@ -198,7 +295,6 @@
                     }
                 });
 
-                // Cập nhật lại vị trí tâm cụm
                 if(changed) {
                     let newCentroids = Array.from({length: K}, () => ({x: 0, y: 0, count: 0}));
                     points.forEach((p, pIdx) => {
@@ -211,7 +307,6 @@
                 }
             }
 
-            // Tính toán WCSS (Tổng bình phương khoảng cách)
             let wcss = 0;
             points.forEach((p, pIdx) => {
                 let c = centroids[assignments[pIdx]];
@@ -251,42 +346,51 @@
             });
         }
 
+        // Hàm khi người dùng muốn reset tạo dữ liệu mới hoàn toàn
+        function refreshData() {
+            generateData();
+            drawPoints();
+            updateDataTable();
+            initChart();
+            document.getElementById('status').innerText = "Đã làm mới dữ liệu! Mời bạn xem bảng tọa độ phía dưới hoặc bấm Chạy Mô Phỏng.";
+        }
+
         // 4. Hàm điều khiển Animation chạy tuần tự từng K
         async function runElbowSimulation() {
-            const btn = document.getElementById('startBtn');
+            const startBtn = document.getElementById('startBtn');
+            const refreshBtn = document.getElementById('refreshBtn');
             const status = document.getElementById('status');
-            btn.disabled = true;
             
-            generateData();
+            startBtn.disabled = true;
+            refreshBtn.disabled = true;
             initChart();
             
-            const wcssValues = [];
             const maxK = 6;
 
             for(let k = 1; k <= maxK; k++) {
                 status.innerText = `Đang tính toán và gom cụm cho K = ${k}...`;
                 
-                // Chạy thuật toán K-means cho trị K hiện tại
                 const result = runKMeans(k);
                 
-                // Cập nhật giao diện vẽ cụm bên trái
+                // Cập nhật đồ thị và canvas
                 drawPoints(result.centroids, result.assignments);
+                updateDataTable(result.assignments); // Cập nhật cả cột "Cụm chỉ định" trong bảng thực tế luôn
                 
-                // Cập nhật giá trị lên đồ thị bên phải
                 elbowChart.data.datasets[0].data[k-1] = result.wcss;
                 elbowChart.update();
 
-                // Tạo độ trễ 1.5 giây để người dùng kịp quan sát hiệu ứng đổi K
                 await new Promise(resolve => setTimeout(resolve, 1500));
             }
 
             status.innerHTML = "🎉 Mô phỏng hoàn tất! Khúc gập <b>K=4</b> chính là 'Elbow'.";
-            btn.disabled = false;
+            startBtn.disabled = false;
+            refreshBtn.disabled = false;
         }
 
-        // Chạy khởi tạo ban đầu khi load trang
+        // Chạy khởi tạo ban đầu khi vừa load trang
         generateData();
         drawPoints();
+        updateDataTable();
         initChart();
     </script>
 </body>
