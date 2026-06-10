@@ -60,3 +60,5 @@ Vì K là tham số phải nhập vào trước, có thể sử dụng phương 
 
 ![Elbow.png](/images/AIML/K-Means/elbow.png)
 
+![Link visualization](/aiml-assets/k-means/elbow.html)
+
