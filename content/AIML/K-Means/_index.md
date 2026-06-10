@@ -5,10 +5,9 @@ title = 'K-Means'
 weight = 1
 +++
 
-
 ## 1. Clustering là gì?
 
-**Clustering trong K-Means** là **thuật toán phân cụm không giám sát (Unsupervised Learning) phổ biến nhất trong Trí tuệ Nhân tạo (AI)**. Thuật toán này tự động nhóm các điểm dữ liệu chưa được gán nhãn thành k cụm độc lập dựa trên các đặc điểm tương đồng. 
+**Clustering trong K-Means** là **thuật toán phân cụm không giám sát (Unsupervised Learning) phổ biến nhất trong Trí tuệ Nhân tạo (AI)**. Thuật toán này tự động nhóm các điểm dữ liệu chưa được gán nhãn thành k cụm độc lập dựa trên các đặc điểm tương đồng.
 
 ## 2. K-Means hoạt động như thế nào?
 
@@ -23,11 +22,9 @@ K-Means hoạt động theo một vòng lặp gồm 4 bước:
 
 Khoảng cách giữa hai điểm A và B được tính bằng công thức:
 
-
 $$
 d(A, B) = \sqrt{\sum_{i=1}^{n}(A_{i} - B_{i})^{2}}
 $$
-
 
 Ví dụ n = 2, không gian 2 chiều
 
@@ -60,5 +57,4 @@ Vì K là tham số phải nhập vào trước, có thể sử dụng phương 
 
 ![Elbow.png](/images/AIML/K-Means/elbow.png)
 
-![Link visualization](/aiml-assets/k-means/elbow.html)
-
+[Link visualization](https://trungnte.github.io/my-fcj-blog/aiml-assets/k-means/elbow.html)
