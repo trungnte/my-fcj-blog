@@ -28,6 +28,6 @@ jobs:
       - name: Release
         uses: cycjimmy/semantic-release-action@v6
         with:
-          extra_plugins: conventional-changelog-conventionalcommits
+          extra_plugins: conventional-changelog-conventionalcommits@8
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
